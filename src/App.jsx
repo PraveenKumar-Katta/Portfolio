@@ -8,7 +8,7 @@
   import Projects from './Components/Projects'
   import Skills from './Components/Skills'
   import Tools from './Components/Tools'
-  import NavBar from "./Components/NavBar"
+  import Navbar from "./Components/Navbar"
   import { ElementProvider } from './Context/ContextAPI'
 
 
@@ -16,7 +16,7 @@
 
     return (
       <ElementProvider>
-      <NavBar/>
+      <Navbar/>
       <hr className='border-gray-900' />
       <Introduction/>
       <Skills/>

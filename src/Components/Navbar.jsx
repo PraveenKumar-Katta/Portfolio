@@ -3,7 +3,7 @@ import { useElements } from "../Context/ContextAPI";
 import { Menu,X } from "lucide-react";
 
 
-const NavBar = () => {
+const Navbar = () => {
   const { contactRef, projectRef, aboutRef, skillsRef } = useElements();
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -61,4 +61,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
