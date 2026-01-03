@@ -5,10 +5,10 @@
   import Footer from './Components/Footer'
   import GitHubSection from './Components/gitProfile'
   import Introduction from './Components/Introduction'
-  import NavBar from './Components/NavBar'
   import Projects from './Components/Projects'
   import Skills from './Components/Skills'
   import Tools from './Components/Tools'
+  import NavBar from "./Components/NavBar"
   import { ElementProvider } from './Context/ContextAPI'
 
 
