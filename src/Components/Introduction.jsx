@@ -1,7 +1,7 @@
 import React from "react";
 import { DownloadIcon, Github } from "lucide-react";
 import { useElements } from "../Context/ContextAPI";
-import profile from "../assets/pk.png";
+import profile from "../assets/profile.png"
 
 const Introduction = () => {
   let { aboutRef } = useElements();
