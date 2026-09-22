@@ -58,7 +58,7 @@ const Projects = () => {
               </div>
               <div className="flex gap-4 text-md">
                 <a href="https://github.com/PraveenKumar-Katta/BuyMart" className="text-blue-200 flex p-1 hover:text-pink-500 cursor-pointer"><Github/>  View Code</a>
-                <a href="https://buymart-shop.netlify.app//" className="text-green-600 flex p-1 hover:text-green-300 cursor-pointer"> <ExternalLink />Live Demo</a>
+                <a href="https://buymart-shop.netlify.app//" target="_blank" className="text-green-600 flex p-1 hover:text-green-300 cursor-pointer"> <ExternalLink />Live Demo</a>
               </div>
             </div>
           </div>
@@ -134,7 +134,7 @@ const Projects = () => {
               </div>
               <div className="flex gap-4 text-md">
                 <a href="https://github.com/PraveenKumar-Katta/Niche-Community" className="text-blue-200 flex p-1 hover:text-pink-500 cursor-pointer"><Github/>  View Code</a>
-                <a href="https://nichehoodbypk.netlify.app/" className="text-green-600 flex p-1 hover:text-green-300 cursor-pointer"> <ExternalLink />Live Demo</a>
+                <a href="https://nichehoodbypk.netlify.app/" target="_blank" className="text-green-600 flex p-1 hover:text-green-300 cursor-pointer"> <ExternalLink />Live Demo</a>
               </div>
             </div>
           </div>

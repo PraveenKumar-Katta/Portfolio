@@ -10,6 +10,7 @@
   import Tools from './Components/Tools'
   import Navbar from "./Components/Navbar"
   import { ElementProvider } from './Context/ContextAPI'
+import Experience from './Components/Experience'
 
 
   function App() {
@@ -19,6 +20,7 @@
       <Navbar/>
       <hr className='border-gray-900' />
       <Introduction/>
+      <Experience/>
       <Skills/>
       <Tools/>
       <Projects/>

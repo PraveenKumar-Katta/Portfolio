@@ -1,7 +1,7 @@
 import React from "react";
 import { DownloadIcon, Github } from "lucide-react";
 import { useElements } from "../Context/ContextAPI";
-import profile from "../assets/profile.png"
+import profile from "../assets/profile.png";
 
 const Introduction = () => {
   let { aboutRef } = useElements();
@@ -33,15 +33,17 @@ const Introduction = () => {
       <div className="max-w-3xl mt-6 p-6 rounded-2xl bg-white/5 backdrop-blur-md border border-white/10 shadow-lg">
         <h3 className="text-2xl text-white font-semibold mb-4">About Me</h3>
         <p className="text-gray-300 leading-relaxed text-lg">
-          I craft exceptional digital experiences through elegant code and
-          innovative solutions.  
-          A passionate <span className="text-pink-400">MERN Stack Developer</span> dedicated to creating scalable
-          and high-performance web applications using MongoDB, Express.js, React, and Node.js.
-          With strong problem-solving skills and hands-on experience in projects like
-          e-commerce platforms, real-time chat apps, and dashboards, I focus on clean code,
-          modular architecture, and responsive UI design.
-          Always exploring new technologies, I aim to build products that are impactful,
-          efficient, and maintainable. Let's build something awesome together!
+          I craft production-grade web applications through clean code and
+          thoughtful engineering. As a
+          <span className="text-pink-400"> Full-Stack Developer</span>, I've
+          built and owned a client-facing identity-verification platform using
+          React, Node.js, Express, and MongoDB — including an Aadhaar
+          verification workflow integrated with DigiLocker, encrypted handling
+          of sensitive candidate data, and database design using indexing and
+          transactions to keep multi-step operations consistent. I care about
+          writing maintainable, well-tested code and building reusable UI
+          components that scale across an application. Always looking to deepen
+          my craft — let's build something real together.
         </p>
       </div>
 

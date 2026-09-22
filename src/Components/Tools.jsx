@@ -14,9 +14,17 @@ const Tools = () => {
           />
           <p>Git</p>
         </div>
+        <div className="bg-white p-2 flex flex-col justify-center items-center rounded-xl transform hover:scale-110 hover:rotate-6 transition-transform duration-300 ease-in-out">
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP.R0mq9v3bT9FydwgoZPpWkwHaHa?r=0&pid=Api&h=220&P=0"
+            width={80}
+            alt="Sublime Merge"
+          />
+          <p>Sublime Merge</p>
+        </div>
         <div className="bg-white p-2 flex flex-col justify-center items-center rounded-xl transform hover:scale-110 hover:-rotate-6 transition-transform duration-300 ease-in-out">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/1200px-Visual_Studio_Code_1.35_icon.svg.png"
+            src="https://iconape.com/wp-content/files/ie/112455/png/visual-studio-code-1.png"
             width={80}
             alt="VsCode"
           />
