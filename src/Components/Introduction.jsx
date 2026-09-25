@@ -4,11 +4,11 @@ import { useElements } from "../Context/ContextAPI";
 import profile from "../assets/profile.png";
 
 const Introduction = () => {
-  let { aboutRef } = useElements();
+  let { homeRef } = useElements();
 
   return (
     <div
-      ref={aboutRef}
+      ref={homeRef}
       className="flex flex-col justify-center mt-30 items-center min-h-screen bg-gradient-to-br min-w-[360px] from-black via-black-900 to-black px-4"
     >
       {/* Profile Image */}

@@ -4,7 +4,7 @@ import { Menu,X } from "lucide-react";
 
 
 const Navbar = () => {
-  const { contactRef, projectRef, aboutRef, skillsRef } = useElements();
+  const { contactRef, projectRef, aboutRef, skillsRef,homeRef } = useElements();
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleFocus = (element) => {
@@ -31,6 +31,7 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-10 text-xl">
+          <p onClick={() => handleFocus(homeRef)} className="hover:text-pink-500 cursor-pointer">Home</p>
           <p onClick={() => handleFocus(aboutRef)} className="hover:text-pink-500 cursor-pointer">About</p>
           <p onClick={() => handleFocus(skillsRef)} className="hover:text-pink-500 cursor-pointer">Skills</p>
           <p onClick={() => handleFocus(projectRef)} className="hover:text-pink-500 cursor-pointer">Projects</p>
@@ -50,6 +51,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="flex flex-col items-center bg-black text-xl gap-4 py-4 md:hidden">
+          <p onClick={() => handleFocus(homeRef)} className="hover:text-pink-500 cursor-pointer">Home</p>
           <p onClick={() => handleFocus(aboutRef)} className="hover:text-pink-500 cursor-pointer">About</p>
           <p onClick={() => handleFocus(skillsRef)} className="hover:text-pink-500 cursor-pointer">Skills</p>
           <p onClick={() => handleFocus(projectRef)} className="hover:text-pink-500 cursor-pointer">Projects</p>

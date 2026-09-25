@@ -1,7 +1,13 @@
 import React from 'react';
 import { useElements } from '../Context/ContextAPI';
+import {
+  Users,
+  MessageCircle,
+  Puzzle,
+  TrendingUp,
+} from 'lucide-react';
 
-// Data for skills - easy to update and manage
+// Data for technical skills - easy to update and manage
 const skillsData = [
   {
     title: "Frontend Development",
@@ -36,6 +42,30 @@ const skillsData = [
   },
 ];
 
+// Data for soft skills
+const softSkillsData = [
+  {
+    name: "Communication",
+    description: "Clearly conveying ideas to both technical and non-technical audiences.",
+    icon: MessageCircle,
+  },
+  {
+    name: "Teamwork",
+    description: "Collaborating effectively across cross-functional teams.",
+    icon: Users,
+  },
+  {
+    name: "Problem Solving",
+    description: "Breaking down complex issues into actionable solutions.",
+    icon: Puzzle,
+  },
+  {
+    name: "Adaptability",
+    description: "Thriving in fast-changing environments and new tech stacks.",
+    icon: TrendingUp,
+  }
+];
+
 // Reusable component for each technology icon
 const TechIcon = ({ name, icon }) => (
   <div className="group flex flex-col items-center justify-center gap-2 text-center">
@@ -61,11 +91,25 @@ const SkillCard = ({ title, description, technologies }) => (
   </div>
 );
 
+// Reusable component for each soft skill card
+const SoftSkillCard = ({ name, description, icon: Icon }) => (
+  <div className="group relative flex flex-col gap-4 overflow-hidden rounded-xl border border-gray-700 bg-gray-800/40 p-6 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-sky-500/60 hover:shadow-lg hover:shadow-sky-500/10">
+    {/* Decorative glow on hover */}
+    <div className="pointer-events-none absolute -right-8 -top-8 h-24 w-24 rounded-full bg-sky-500/0 blur-2xl transition-all duration-300 group-hover:bg-sky-500/20" />
+
+    <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-sky-500/10 text-sky-400 transition-all duration-300 group-hover:bg-sky-500 group-hover:text-white">
+      <Icon className="h-6 w-6" strokeWidth={1.75} />
+    </div>
+
+    <h4 className="text-lg font-semibold text-white">{name}</h4>
+    <p className="text-sm leading-relaxed text-gray-400">{description}</p>
+  </div>
+);
 
 const Skills = () => {
-  let {skillsRef}=useElements()
+  let { skillsRef } = useElements();
   return (
-    <div  ref={skillsRef} className="min-h-screen w-full bg-black text-white">
+    <div ref={skillsRef} className="min-h-screen w-full bg-black text-white">
       <div className="mx-auto max-w-7xl px-4 py-24 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-base font-semibold uppercase tracking-wider text-sky-400">
@@ -86,6 +130,30 @@ const Skills = () => {
               title={skill.title}
               description={skill.description}
               technologies={skill.technologies}
+            />
+          ))}
+        </div>
+
+        {/* Soft Skills Section */}
+        <div className="mt-24 text-center">
+          <h2 className="text-base font-semibold uppercase tracking-wider text-sky-400">
+            Beyond The Code
+          </h2>
+          <p className="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">
+            My Soft Skills
+          </p>
+          <p className="mx-auto mt-5 max-w-xl text-xl text-gray-400">
+            The interpersonal strengths that shape how I work and collaborate.
+          </p>
+        </div>
+
+        <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {softSkillsData.map((skill) => (
+            <SoftSkillCard
+              key={skill.name}
+              name={skill.name}
+              description={skill.description}
+              icon={skill.icon}
             />
           ))}
         </div>

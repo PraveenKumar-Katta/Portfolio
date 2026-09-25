@@ -2,6 +2,7 @@ import React from "react";
 import buymart from "../assets/buymart.png";
 import eventify from "../assets/eventify.png";
 import NicheCommunity from "../assets/NicheCommunity.png";
+import videoTube from "../assets/videoTube.png";
 import { useElements } from "../Context/ContextAPI";
 import { DownloadIcon, ExternalLink, Github } from "lucide-react";
 
@@ -16,7 +17,7 @@ const Projects = () => {
           full-stack development, problem solving, and real-world application
           design.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {/* Project 1: Buymart */}
           <div className="bg-gray-800 text-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
             <img
@@ -57,8 +58,22 @@ const Projects = () => {
                 </span>
               </div>
               <div className="flex gap-4 text-md">
-                <a href="https://github.com/PraveenKumar-Katta/BuyMart" className="text-blue-200 flex p-1 hover:text-pink-500 cursor-pointer"><Github/>  View Code</a>
-                <a href="https://buymart-shop.netlify.app//" target="_blank" className="text-green-600 flex p-1 hover:text-green-300 cursor-pointer"> <ExternalLink />Live Demo</a>
+                <a
+                  target="_blank"
+                  href="https://github.com/PraveenKumar-Katta/BuyMart"
+                  className="text-blue-200 flex p-1 hover:text-pink-500 cursor-pointer"
+                >
+                  <Github /> View Code
+                </a>
+                <a
+                  href="https://buymart-shop.netlify.app//"
+                  target="_blank"
+                  className="text-green-600 flex p-1 hover:text-green-300 cursor-pointer"
+                >
+                  {" "}
+                  <ExternalLink />
+                  Live Demo
+                </a>
               </div>
             </div>
           </div>
@@ -94,8 +109,22 @@ const Projects = () => {
                 </span>
               </div>
               <div className="flex gap-4 text-md">
-                <a href="https://github.com/PraveenKumar-Katta/Event-Management-App" target="_blank" className="text-blue-200 flex p-1 hover:text-pink-500 cursor-pointer"><Github/>  View Code</a>
-                <a href="https://eventifybypk.netlify.app/" target="_blank" className="text-green-600 flex p-1 hover:text-green-300 cursor-pointer"> <ExternalLink />Live Demo</a>
+                <a
+                  href="https://github.com/PraveenKumar-Katta/Event-Management-App"
+                  target="_blank"
+                  className="text-blue-200 flex p-1 hover:text-pink-500 cursor-pointer"
+                >
+                  <Github /> View Code
+                </a>
+                <a
+                  href="https://eventifybypk.netlify.app/"
+                  target="_blank"
+                  className="text-green-600 flex p-1 hover:text-green-300 cursor-pointer"
+                >
+                  {" "}
+                  <ExternalLink />
+                  Live Demo
+                </a>
               </div>
             </div>
           </div>
@@ -133,8 +162,71 @@ const Projects = () => {
                 </span>
               </div>
               <div className="flex gap-4 text-md">
-                <a href="https://github.com/PraveenKumar-Katta/Niche-Community" className="text-blue-200 flex p-1 hover:text-pink-500 cursor-pointer"><Github/>  View Code</a>
-                <a href="https://nichehoodbypk.netlify.app/" target="_blank" className="text-green-600 flex p-1 hover:text-green-300 cursor-pointer"> <ExternalLink />Live Demo</a>
+                <a
+                  target="_blank"
+                  href="https://github.com/PraveenKumar-Katta/Niche-Community"
+                  className="text-blue-200 flex p-1 hover:text-pink-500 cursor-pointer"
+                >
+                  <Github /> View Code
+                </a>
+                <a
+                  href="https://nichehoodbypk.netlify.app/"
+                  target="_blank"
+                  className="text-green-600 flex p-1 hover:text-green-300 cursor-pointer"
+                >
+                  {" "}
+                  <ExternalLink />
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 4: Youtube */}
+          <div className="bg-gray-800 text-white-800 rounded-xl shadow-lg overflow-hidden transform hover:scale-105               transition-transform duration-300">
+            <img
+              src={videoTube}
+              alt="VideoTube"
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-6">
+              <h1 className="text-2xl font-bold mb-2">VideoTube</h1>
+              <p className="text-sm text-white font-semibold mb-4">
+                A YouTube-inspired video-sharing web app built with React —
+                browse, search, and watch videos with Firebase authentication
+                and a dark theme.
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                <span className="bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-1 rounded">
+                  React
+                </span>
+                <span className="bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-1 rounded">
+                  Tailwind
+                </span>
+                <span className="bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-1 rounded">
+                  Redux ToolKit
+                </span>
+                <span className="bg-gray-200 text-gray-700 text-xs font-semibold px-2 py-1 rounded">
+                  Firebase Auth
+                </span>
+              </div>
+              <div className="flex gap-4 text-md">
+                <a
+                  href="https://github.com/PraveenKumar-Katta/VideoTube"
+                  target="_blank"
+                  className="text-blue-200 flex p-1 hover:text-pink-500 cursor-pointer"
+                >
+                  <Github /> View Code
+                </a>
+                <a
+                  href="https://youtubebypk.netlify.app/"
+                  target="_blank"
+                  className="text-green-600 flex p-1 hover:text-green-300 cursor-pointer"
+                >
+                  {" "}
+                  <ExternalLink />
+                  Live Demo
+                </a>
               </div>
             </div>
           </div>

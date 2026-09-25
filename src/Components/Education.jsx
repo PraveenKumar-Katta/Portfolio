@@ -1,4 +1,5 @@
 import React from 'react';
+import { useElements } from '../Context/ContextAPI';
 
 // Icon for the timeline points - you can use any SVG or icon library
 const GraduationCapIcon = (props) => (
@@ -57,8 +58,9 @@ const TimelineItem = ({ degree, institution, period, details }) => (
 
 
 const Education = () => {
+  let {aboutRef}=useElements()
   return (
-    <div className="w-full bg-black py-24 text-white">
+    <div ref={aboutRef} className="w-full bg-black py-24 text-white">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-base font-semibold uppercase tracking-wider text-sky-400">

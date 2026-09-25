@@ -2,7 +2,7 @@ import React from "react";
 
 const Tools = () => {
   return (
-    <div className="bg-black flex flex-col gap-10 py-50">
+    <div className="bg-black flex flex-col gap-10 py-10">
       <h1 className="text-center font-bold text-4xl text-white">Tools</h1>
       <p className="mx-auto  text-xl text-gray-400">A glimpse into the toolkit I use to craft high-performance full-stack applications</p>
       <div className="flex flex-wrap justify-center items-center gap-15 ">
